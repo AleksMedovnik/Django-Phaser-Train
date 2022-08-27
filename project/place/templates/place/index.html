@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+    <div class="mb-3">
+        <label for="text-score-1"
+            class="form-label mb-3">Напиши в поле ниже слово в слово!</label>
+        <input type="text"
+            class="form-control mb-3"
+            id="text-score-1"
+            placeholder='Score: 0'>
+        <button type="submit"
+            class="btn btn-primary mb-3">Выполнить</button>
+    </div>
+</div>
+<iframe src="{% url 'canvas1' %}"
+    style="width: 700px; height: 605px;"></iframe>
+{% endblock %}
